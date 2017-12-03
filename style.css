@@ -1,0 +1,178 @@
+/* RESET HTML */
+
+/**************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* GLOBALI */
+
+html{
+	height: 100%;
+}
+
+body {
+	font-family: 'Raleway' !important;
+	height: 100%;
+	background-color: #0f0f0f;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0 !important;
+	font-weight: 100 !important;
+}
+
+h4{
+	font-weight: 400 !important;
+	text-align: center;
+	margin: 30px !important;
+	font-size: 25px !important;
+}
+
+h5{
+	font-weight: 100 !important;
+	text-align: center;
+	margin: 30px !important;
+	font-size: 50px !important;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.blocco-sinistro {
+	float: left;
+	padding: 30px;
+	width: 50%;
+	position: fixed;
+}
+
+.blocco-destro {
+	float: right;
+	background-color: #fff;
+	width: 40%;
+	min-height: 100%;
+	box-shadow: 2px -1px 5px 1px black inset;
+}
+
+/* BLOCCO SINISTRO */
+
+.foto-profilo {
+	width: 250px;
+	height: 250px;
+	border-radius: 999em;
+	box-shadow: 0 0 8px 1px black;
+	display: block;
+	margin: 0 auto 10px auto;
+	opacity: 0.8;
+	transition: ease opacity 0.4s;
+	cursor: pointer;
+}
+
+.foto-profilo:hover{
+	opacity: 1;
+}
+
+.nome-profilo{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	text-shadow:0px 1px 2px rgba(0,0,0,0.3);
+}
+
+.descrizione-profilo {
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+	line-height: 23px;
+	font-size: 20px;
+	font-weight: 300;
+	text-shadow:0px 1px 2px rgba(0,0,0,0.3);
+}
+
+.occupation {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	text-shadow: 0 0 1px black;
+}
+
+/* BLOCCO SINISTRO */
+
+.separatore {
+	width: 70%;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 821px), screen and (max-height: 544px) {
+	.blocco-sinistro {
+		float: none;
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.blocco-destro {
+		float: none;
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		box-shadow: 0px 2px 5px 1px black inset;
+	}
+
+	.descrizione-profilo {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
